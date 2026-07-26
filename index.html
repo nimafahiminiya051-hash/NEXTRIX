@@ -1,266 +1,418 @@
 <!DOCTYPE html>
 <html lang="fa">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
-        <title>
-            NextRix|محصولات دیجیتال
-        </title>
-        <style>
-            body{
-                background-color: #f5faff;
-            }
-            Header{
-                position: fixed;
-                display: flex;
-                width: 100%;
-                background-color: white;
-                box-shadow: 0px 5px 20px rgb(0,0,0,.10);
-                top:0px;
-                left:0px;
-                border:none;
-                z-index: 999;
-                backdrop-filter: blur(15px);
-            }
-            #h2-on-header{
-                color:rgb(0, 140, 255);
-                font-family: arial;
-                margin-left:100px
-            }
-            #h2-2-on-header{
-                color:black;
-                font-family:helvetica;
-                margin-left:425px;
-            }
-            #h2-3-on-header{
-                color:black;
-                font-family:helvetica;
-                margin-left:75px;
-            }
-            #h2-1-on-body-title{
-                font-family: arial;
-                margin-top:120px;
-                margin-left: 85px;
-                font-size: 30px;
-                color:black;
-            }
-            #span-1-on-h2{
-                color:rgb(36, 137, 231);
-            }
-            #h2-2-on-body-title{
-                font-family: arial;
-                margin-top:3.4px;
-                margin-left: 85px;
-                font-size: 30px;
-                color:black;
-            }
-            #h3-on-body-1{
-                color:lightslategray;
-                font-family: arial;
-                margin-left: 85px;
-            }
-            #h2-4-on-body-button{
-                color:white;
-                font-family: arial;
-                background-color: rgb(0, 132, 255);
-                border:none;
-                border-radius: 20px;
-                width: 185px;
-                text-align: center;
-                margin-left: 85px;
-                margin-top: 20px;
-                transition: all 1s;
-            }
-            #h2-4-on-body-button:hover{
-                transform: scale(1.05);
-            }
-            #h2-5-on-body{
-                text-align: center;
-                font-family: arial;
-                margin-top:100px;
-            }
-            #daddy-div1{
-                display: flex;
-            }
-            #div-1-on-bodyL{
-                background-color: white;
-                box-shadow: 0px 5px 20px rgb(0,0,0,.10);
-                margin-top:30px;
-                width: 400px;
-                border:none;
-                border-radius: 5px;
-                margin-left:50px;
-                transition: all 1s;
-            }
-            #div-1-on-bodyL:hover{
-                transform: translateY(-15px);
-            }
-            #h2-1-on-div-on-body{
-                color:rgb(0, 140, 255);
-                font-family: arial;
-                text-align: center;
-            }
-            #description-web-disign-N{
-                color:rgb(73, 73, 73);
-                font-family: arial;
-                text-align: center;
-            }
-            #div-2-on-bodyK{
-                background-color: white;
-                box-shadow: 0px 5px 20px rgb(0,0,0,.10);
-                margin-top:30px;
-                width: 400px;
-                border:none;
-                border-radius: 5px;
-                margin-left:90px;
-                transition: all 1s;
-            }
-            #div-2-on-bodyK:hover{
-                transform: translateY(-15px);
-            }
-            #h2-title-ui-ux-on-div{
-                color:rgb(0, 140, 255);
-                font-family: arial;
-                text-align: center;
-            }
-            #description-ui-ux-khand{
-                color:rgb(73, 73, 73);
-                font-family: arial;
-                text-align: center;
-            }
-            footer{
-                background-color: rgb(0, 110, 255);
-                height: 50px;
-                width: 100%;
-                margin-top: 70px;
-                color:whitesmoke;
-                text-align: center;
-                font-family: arial;
-                padding:30px;
-            }
-            @media (max-width: 768px){
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        NextRix| طراحی وب و خدمات دیجیتال
+    </title>
+    <style>
+        body{
+            background-color: rgb(24, 6, 58);
+        }
+        header{
+            background-color: rgba(27, 6, 66, 0.158);
+            border: solid;
+            border-width: 0px;
+            border-bottom-width: 0.3px;
+            border-color:rgba(223, 217, 217, 0.253);
+            width:100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            position: fixed;
+            backdrop-filter: blur(10px);
+        }
+        .class-header-txt{
+            font-family: vazirmatn;
+            color:white;
+            margin-left: 10vw;
+            transition: all 1s;
+        }
+        .class-header-txt:hover{
+            color:blueviolet;
+        }
+        .class-txt-header-txt{
+            font-family: vazirmatn;
+            color:white;
+            text-align: right;
+            margin-left: 10vw;
+            transition: all 1s;
+        }
+        .class-txt-header-txt:hover{
+            color:blueviolet;
+        }
+        .img-div-txt-main{
+            display:flex;
+        }
+        .img-div-txt-main{
+    display: flex;
+    align-items: center;
+        }
 
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 20px;
-    box-sizing:border-box;
-}
+        .text-box{
+    display: flex;
+    flex-direction: column;
+        }
+        .img-main-a-1{
+            width: 50vw;
+            margin-top: 5vh;
+        }
+        .txt-color-main-butiful{
+            color:white;
+            font-family: vazirmatn;
+            margin-left:2.8vw;
+            font-size: 20px;
+            margin-top:14vh;
+        }
+        .txt-main-div-absolotecinema{
+            color:white;
+            font-family: vazirmatn;
+            margin-right:7.5vw;
+            text-align: right;
+            font-size: 30px;
+        }
+        .idk-main-div1111122{
+            color:rgb(137, 38, 250);
+            font-family: vazirmatn;
+        }
+        .color-txt-color-description{
+            color: lightslategray;
+            font-family: vazirmatn;
+            text-align: right;
+            margin-right:7.5vw;
+        }
+        .khademat-us-button-click-body{
+            font-family: vazirmatn;
+            background-color: rgba(0, 0, 0, 0);
+            border:solid;
+            border-width:0.3px;
+            border-color:rgba(81, 6, 180, 0.459);
+            border-radius:8px;
+            width:10vw;
+            text-align: center;
+            color:white;
+            padding: 0.3vw;
+            margin-left:5vw;
+            transition: all 1s;
+        }
+        .khademat-us-button-click-body:hover{
+            background-color: rgba(113, 4, 255, 0.247);
+        }
+        .text-project-button-click{
+            font-family: vazirmatn;
+            background-color: rgba(101, 11, 218, 0.822);
+            border:solid;
+            border-width:0.3px;
+            border-color:rgba(81, 6, 180, 0.459);
+            border-radius:8px;
+            width:10vw;
+            text-align: center;
+            color:white;
+            padding: 0.3vw;
+            margin-left:11vw;
+            transition: all 1s;
+        }
+        .text-project-button-click:hover{
+            background-color: rgba(75, 7, 165, 0.822);
+        }
+        .dady-div-txt-on0-body{
+            display:flex;
+        }
+        .section1{
+            background-color: rgb(6, 14, 58);
+            width:100%;
+        }
+        .txt-section-1-h2-body{
+            color:white;
+            font-family: vazirmatn;
+            text-align: center;
+            font-size:25px;
+        }
+        .text-section-1-h2-body-h3{
+            color:rgb(172, 172, 172);
+            font-family:vazirmatn;
+            text-align: center;
+            font-size:20px;
+        }
+        .daddy-div-section-1{
+            display: flex;
+        }
+        .tarahi-logo-div{
+            background-color: rgba(13, 27, 109, 0.438);
+            font-family:vazirmatn;
+            border:solid;
+            border-color:rgba(17, 34, 133, 0.438);
+            border-radius:8px;
+            border-width:0.5px;
+            width:245px;
+            margin-left:7vw;
+            transition: all 1s;
+        }
+        .tarahi-logo-div:hover{
+            transform: translateY(-15px);
+        }
+        .txt-tarahi-logo{
+            color:rgb(184, 183, 183);
+            text-align: center;
+        }
+        .tarahoi-ogo-description{
+            color:rgb(136, 135, 135);
+            text-align: center;
+        }
+        .img-fivs{
+            width:10vw;
+            height: 15vh;
+            margin-left:6.5vw;
+            border:solid;
+            border-radius:7px;
+            border-width:0px;
+            margin-top:2vh;
+        }
+        .tarahi-ern-htmlcss-no-hs-div{
+            background-color: rgba(13, 27, 109, 0.438);
+            font-family:vazirmatn;
+            border:solid;
+            border-color:rgba(17, 34, 133, 0.438);
+            border-radius:8px;
+            border-width:0.5px;
+            width:245px;
+            margin-left:5vw;
+            transition: all 1s;
+        }
+        .tarahi-ern-htmlcss-no-hs-div:hover{
+            transform: translateY(-15px);
+        }
 
-#h2-on-header{
-    margin-left:0;
-    font-size:24px;
-}
-
-#h2-2-on-header,
-#h2-3-on-header{
-    margin-left:0;
-    font-size:18px;
-}
-
-#h2-1-on-body-title,
-#h2-2-on-body-title,
-#h3-on-body-1{
-    margin-left:20px;
-    margin-right:20px;
-    text-align:center;
-}
-
-#h2-1-on-body-title{
-    margin-top:110px;
-    font-size:28px;
-}
-
-#h2-2-on-body-title{
-    font-size:24px;
-}
-
-#h3-on-body-1{
-    font-size:18px;
-}
-
-#h2-4-on-body-button{
-    margin:25px auto 0;
-}
-
-#daddy-div1{
-    flex-direction:column;
-    align-items:center;
-}
-
-#div-1-on-bodyL,
-#div-2-on-bodyK{
-    width:90%;
-    margin-left:0;
-    margin-right:0;
+.mobile-header{
+display:none;
 }
 
-#div-2-on-bodyK{
-    margin-top:20px;
+.hamburger{
+display:flex;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
 }
 
-footer{
-    padding:20px;
-    box-sizing:border-box;
-    height:auto;
+.hamburger span{
+width:28px;
+height:3px;
+background:#fff;
+border-radius:5px;
+transition:.4s;
 }
 
-#h2-on-footer{
-    font-size:18px;
+.logo{
+font-family:Vazirmatn;
+color:white;
+font-size:24px;
+font-weight:700;
+}
+
+.mobile-menu{
+display:none;
+position:fixed;
+top:70px;
+left:15px;
+width:230px;
+background:rgba(20,10,55,.98);
+border:1px solid rgba(120,70,255,.4);
+border-radius:12px;
+backdrop-filter:blur(12px);
+overflow:hidden;
+box-shadow:0 0 30px rgba(98,0,255,.3);
+z-index:999;
+}
+
+.mobile-menu h2{
+margin:0;
+padding:18px;
+font-size:18px;
+font-family:Vazirmatn;
+color:white;
+border-bottom:1px solid rgba(255,255,255,.08);
+cursor:pointer;
+transition:.3s;
+}
+
+.mobile-menu h2:hover{
+background:rgba(120,70,255,.2);
+}
+
+.mobile-menu.show{
+display:block;
+animation:menu .35s ease;
+}
+
+@keyframes menu{
+from{
+opacity:0;
+transform:translateY(-15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
 }
 }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h2 id="h2-on-header">
-                NextRix
-            </h2>
-            <h2 id="h2-2-on-header">
-                Home
-            </h2>
-            <h2 id="h2-3-on-header">
-                Services
-            </h2>
-        </header>
-        <h2 id="h2-1-on-body-title">
-            Digital Service Design with <span id="span-1-on-h2">NextRix</span>.
-        </h2>
-            <h2 id="h2-2-on-body-title">
-            We specialize in web design and digital solutions.
-        </h2>
-        <h3 id="h3-on-body-1">
-            Web Design - UI/UX - Development
+
+.desktop-menu{
+display:flex;
+width:100%;
+}
+
+
+@media (max-width:768px){
+
+.desktop-menu{
+display:none;
+}
+
+.mobile-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+padding:18px;
+}
+
+.img-div-txt-main{
+flex-direction:column;
+}
+
+.img-main-a-1{
+width:90%;
+margin:auto;
+margin-top:90px;
+}
+
+.text-box{
+align-items:center;
+text-align:center;
+}
+
+.txt-main-div-absolotecinema,
+.color-txt-color-description,
+.txt-color-main-butiful{
+text-align:center;
+margin:20px;
+}
+
+.dady-div-txt-on0-body{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.khademat-us-button-click-body,
+.text-project-button-click{
+width:220px;
+margin:0;
+padding:12px;
+}
+
+.daddy-div-section-1{
+flex-direction:column;
+align-items:center;
+gap:25px;
+}
+
+.tarahi-logo-div,
+.tarahi-ern-htmlcss-no-hs-div{
+margin:0;
+width:90%;
+}
+
+.img-fivs{
+width:120px;
+height:auto;
+margin:20px auto;
+display:block;
+}
+
+}
+    </style>
+</head>
+<body>
+<header>
+    <h2 class="class-txt-header-txt">خدمات ما</h2>
+    <h2 class="class-txt-header-txt">وبلاگ ها</h2>
+    <h2 class="class-txt-header-txt">درباره ما</h2>
+    <h2 class="class-txt-header-txt">تماس با ما</h2>
+    <h2 class="class-header-txt">خانه</h2>
+</header>
+    <main>
+<div class="img-div-txt-main">
+    <img src="ChatGPT Image Jul 25, 2026, 07_52_38 PM.png" class="img-main-a-1">
+
+    <div class="text-box">
+        <h3 class="txt-color-main-butiful">
+            راهکار های دیجیتال برای رشد کسب و کار شما
         </h3>
-        <h2 id="h2-4-on-body-button">
-            View Services
+
+        <h2 class="txt-main-div-absolotecinema">
+            راهکار های هوشمند<br>برای
+            <span class="idk-main-div1111122">آینده ای بهتر</span>
         </h2>
-        <h2 id="h2-5-on-body">
-            Our Services
-        </h2>
-        <div id="daddy-div1">
-        <div id="div-1-on-bodyL">
-            <h2 id="h2-1-on-div-on-body">
-                WebDesign
-            </h2>
-            <h2 id="description-web-disign-N">
-                Modern Responsive websites with premium UI.
-            </h2>
+        <h3 class="color-txt-color-description">
+            ما در نکستریکس با ارائه راه کار های نوین دیجیتال به<br>به کسب و کارها کمک میکنیم تا در دنیای دیجیتال<br>پیشرو باشند
+        </h3>
+        <div class="dady-div-txt-on0-body">
+        <h3 class="khademat-us-button-click-body">
+            خدمات ما
+        </h3>
+        <h3 class="text-project-button-click">
+            شروع پروژه
+        </h3>
         </div>
-        <div id="div-2-on-bodyK">
-            <h2 id="h2-title-ui-ux-on-div">
-                UI / UX
+    </div>
+</div>
+<section class="section1">
+    <h3 class="txt-section-1-h2-body">
+        راهکار هایی برای هر نیاز دیجیتال
+    </h3>
+    <h3 class="text-section-1-h2-body-h3">
+        ما مجموعه ای از خدمات تخصصی را برای کمک به رشد و موفقیت کسب و کار شما ارائه میدهیم
+    </h3>
+    <div class="daddy-div-section-1">
+        <div class="tarahi-logo-div">
+            <img src="Icn1002082www.tiktarh.com_.jpg" class="img-fivs">
+            <h2 class="txt-tarahi-logo">
+                طراحی لوگو
             </h2>
-            <h2 id="description-ui-ux-khand">
-                Clean interfaces focused on user experience.
-            </h2>
+            <h3 class="tarahoi-ogo-description">
+                طراحی منحصر به فرد و زیبا برای برند و محصولات شما
+            </h3>
         </div>
-        </div>
-        <footer>
-            <h2 id="h2-on-footer">
-            2026 NextRix All Rights Reserved.
+        <div class="tarahi-ern-htmlcss-no-hs-div">
+            <img src="ijoifheiurh.png" class="img-fivs">
+            <h2 class="txt-tarahi-logo">
+                طراحی وب سایت
             </h2>
-        </footer>
-    </body>
+            <h3 class="tarahoi-ogo-description">
+                طراحی وب سایت های مدرن و واکنشگرا مناسب با نیاز شما
+            </h3>
+        </div>
+
+            <div class="tarahi-ern-htmlcss-no-hs-div">
+            <img src="images.jpg" class="img-fivs">
+            <h2 class="txt-tarahi-logo">
+                دیجیتال مارکتینگ
+            </h2>
+            <h3 class="tarahoi-ogo-description">
+                افزایش دیده شدن برند شما در فضای دیجیتال با استراتژی
+            </h3>
+        </div>
+    </div>
+</section>
+    </main>
+    <script>
+function toggleMenu(){
+document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
+</body>
 </html>
