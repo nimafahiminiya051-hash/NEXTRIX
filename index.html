@@ -334,16 +334,57 @@ display:block;
 }
 
 }
+header{
+    z-index:1000;
+}
+
+.mobile-header{
+    box-sizing:border-box;
+}
+
+.mobile-menu{
+    right:15px;
+    left:auto;
+}
     </style>
 </head>
 <body>
 <header>
-    <h2 class="class-txt-header-txt">خدمات ما</h2>
-    <h2 class="class-txt-header-txt">وبلاگ ها</h2>
-    <h2 class="class-txt-header-txt">درباره ما</h2>
-    <h2 class="class-txt-header-txt">تماس با ما</h2>
-    <h2 class="class-header-txt">خانه</h2>
+
+    <!-- منوی دسکتاپ -->
+    <div class="desktop-menu">
+        <h2 class="class-txt-header-txt">خدمات ما</h2>
+        <h2 class="class-txt-header-txt">وبلاگ ها</h2>
+        <h2 class="class-txt-header-txt">درباره ما</h2>
+        <h2 class="class-txt-header-txt">تماس با ما</h2>
+        <h2 class="class-header-txt">خانه</h2>
+    </div>
+
+    <!-- هدر موبایل -->
+    <div class="mobile-header">
+
+        <div class="logo">
+            NextRix
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
 </header>
+
+<!-- منوی همبرگری -->
+<div class="mobile-menu" id="mobileMenu">
+    <h2>خانه</h2>
+    <h2>خدمات ما</h2>
+    <h2>وبلاگ ها</h2>
+    <h2>درباره ما</h2>
+    <h2>تماس با ما</h2>
+</div>
     <main>
 <div class="img-div-txt-main">
     <img src="ChatGPT Image Jul 25, 2026, 07_52_38 PM.png" class="img-main-a-1">
@@ -411,8 +452,19 @@ display:block;
     </main>
     <script>
 function toggleMenu(){
-document.getElementById("mobileMenu").classList.toggle("show");
+    document.getElementById("mobileMenu").classList.toggle("show");
 }
+
+document.addEventListener("click",function(e){
+
+    const menu=document.getElementById("mobileMenu");
+    const hamburger=document.querySelector(".hamburger");
+
+    if(!menu.contains(e.target) && !hamburger.contains(e.target)){
+        menu.classList.remove("show");
+    }
+
+});
 </script>
 </body>
 </html>
